@@ -1,0 +1,17 @@
+steps:
+# Install dependencies
+- name: 'python:3.9'
+  entrypoint: pip
+  args: ['install', '-r', 'requirements.txt', '--user']
+
+# Run tests (if you have any)
+# - name: 'python:3.9'
+#   entrypoint: python
+#   args: ['-m', 'unittest', 'discover', 'tests']
+
+# Deploy to App Engine
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud app deploy --quiet']
+
+timeout: '1600s'

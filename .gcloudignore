@@ -1,0 +1,30 @@
+# Python virtual environment
+myenv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Development and local files
+.git/
+.gitignore
+*.log
+.vscode/
+.idea/
+
+# Large directories that aren't needed
+node_modules/
+
+# Any other large or unnecessary directories
+Fine-Tuning_DataSet/
+
+# Ignore specific JSON files
+tarot-433417-81a148e4ac53.json
+local-config.json
+
+# Ignore .env file
+.env
+
+# Add any other files or directories you want to ignore

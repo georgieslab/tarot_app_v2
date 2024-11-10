@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+myenv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Credentials
+*.json
+
+# Other sensitive or unnecessary files
+*.log
+.DS_Store
